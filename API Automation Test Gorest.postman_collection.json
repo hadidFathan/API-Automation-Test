@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "2ad37989-0974-4f8c-8f33-72c9f5a284aa",
+		"name": "API Automation Test Gorest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9882815"
+	},
+	"item": [
+		{
+			"name": "Nested Resources",
+			"item": [
+				{
+					"name": "Get Request Gorest users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Request Gorest post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/308/posts",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"308",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Request Gorest Comments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/posts/308/comments",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"posts",
+								"308",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Request Gorest Todos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/308/todos",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"308",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a user post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1986,\r\n        \"user_id\": 4018,\r\n        \"title\": \"Omnis sonitus comprehendo caelum sit creber minima corpus cum cras tricesimus aequitas sortitus alter.\",\r\n        \"body\": \"Cervus utrum amet. Conculco placeat pel. Adimpleo vorago auxilium. Corrumpo curo teneo. Utpote eius quo. Cohaero sint veritas. Voro volaticus doloremque. Et torqueo degero. Quia sumo tempora. Audacia degenero vespillo. Terga spectaculum adstringo. Demulceo adfero odit. Traho decet supplanto. Confero cetera corpus. Demitto vorax auris. Autem bis ante. Acies adsidue qui. Tum denuncio ara. Decens defigo video. Depraedor decipio arcus. Caterva quo aqua. Vix aedificium acervus.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/308/posts",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"308",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a post comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 2021,\r\n        \"post_id\": 1983,\r\n        \"name\": \"Niro Desai\",\r\n        \"email\": \"niro_desai@bahringer-simonis.io\",\r\n        \"body\": \"Facere et consectetur.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/posts/308/comments",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"posts",
+								"308",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a user todo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1994,\r\n        \"user_id\": 4013,\r\n        \"title\": \"Succedo suscipio terga facere curriculum et.\",\r\n        \"due_on\": \"2022-12-24T00:00:00.000+05:30\",\r\n        \"status\": \"pending\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/308/todos",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"308",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trying it Out",
+			"item": [
+				{
+					"name": "Create a new user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\":\"hadid Fathonah\",\r\n \"gender\":\"Female\",\r\n \"email\":\"hadidfathanfatonah@gmail.com\",\r\n \"status\":\"active\"\r\n\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 43256,\r\n    \"name\": \"hadid Azizah\",\r\n    \"email\": \"hadidfathanfatonah@gmail.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"inactive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in//public/v2/users/43322",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"",
+								"public",
+								"v2",
+								"users",
+								"43322"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth Gorest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/chandamama-stories",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"chandamama-stories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "d15f406ac74aed4004adefeec0a1ef2d2663854f3d7285d29190923e3f79b5c1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in//public/v2/users/43322",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"",
+								"public",
+								"v2",
+								"users",
+								"43322"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
